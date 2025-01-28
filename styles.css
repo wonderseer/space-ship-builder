@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('space-background.jpg') no-repeat center center fixed; /* Добавьте путь к вашему фоновому изображению */
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон для контейнера */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.ship-container {
+    display: flex;
+    align-items: center;
+}
+
+.ship {
+    position: relative;
+    width: 200px; /* Adjust the size as needed */
+    margin-right: 30px;
+}
+
+#shipImage.floating-ship {
+    width: 100%;
+    height: auto;
+    animation: floatAnimation 5s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-5px) rotate(2deg);
+    }
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+    75% {
+        transform: translateY(5px) rotate(-2deg);
+    }
+}
+
+.module {
+    position: absolute;
+    border: 2px dashed white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#module1 {
+    top: 20px;
+    left: 20px;
+}
+
+#module2 {
+    top: 20px;
+    right: 20px;
+}
+
+.modules {
+    text-align: left;
+}
+
+.modules h2 {
+    margin-bottom: 10px;
+}
+
+.module-option {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.module-option img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.module-option:hover {
+    background-color: #444;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

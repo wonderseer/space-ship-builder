@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Ship Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Space Ship Builder</h1>
+        <div class="ship-container">
+            <div class="ship">
+                <img id="shipImage" src="ship.png" alt="Space Ship" class="floating-ship">
+                <div id="module1" class="module"></div>
+                <div id="module2" class="module"></div>
+            </div>
+            <div class="modules">
+                <h2>Select Module:</h2>
+                <div class="module-option" draggable="true" data-type="armor" data-image="armor.png">Armor <img src="armor.png" alt="Armor"></div>
+                <div class="module-option" draggable="true" data-type="weapon" data-image="weapon.png">Weapon <img src="weapon.png" alt="Weapon"></div>
+            </div>
+        </div>
+        <button id="playButton" style="display:none;">Play</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
